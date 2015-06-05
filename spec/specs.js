@@ -34,4 +34,9 @@ describe('Pizza', function() {
     expect(newPizza.price()).to.equal(36);
   })
 
+  it("returns the price of 12 medium 2 toppings pizzas", function() {
+    var newPizza = new Pizza('medium', 2, 12);
+    expect(newPizza.price()).to.equal(144)
+  })
+
 })
