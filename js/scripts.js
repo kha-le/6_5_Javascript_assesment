@@ -26,7 +26,7 @@ $(document).ready(function(){
     var size = $("#size").val();
     var topping = $("#toppings").val();
     var values = [];
-      $('.toppings').each(function(){
+      $('.topping').each(function(){
         var $this = $(this);
         if ($this.is(':checked')) {
           values.push($this.val());
