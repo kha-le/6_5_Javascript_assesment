@@ -14,7 +14,7 @@ describe('Pizza', function() {
     expect(newPizza.price()).to.equal(10);
   })
 
-  it("returns the price of 1 medium 3 topping pizza", function(){
+  it("returns the price of 1 medium 3 toppings pizza", function(){
     var newPizza = new Pizza('medium', 3);
     expect(newPizza.price()).to.equal(13);
   })
@@ -22,7 +22,11 @@ describe('Pizza', function() {
   it("returns the price of 1 small cheese pizza", function() {
     var newPizza = new Pizza('small', 0);
     expect(newPizza.price()).to.equal(8);
+  })
 
+  it("returns the pric of 1 small 5 toppings pizza", function() {
+    var newPizza = new Pizza('small', 5);
+    expect(newPizza.price()).to.equal(13);
   })
 
 })
