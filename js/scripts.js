@@ -1,11 +1,12 @@
 function Pizza(size,toppings) {
   this.size = size;
-  this.toppings = [toppings].length;
+  this.toppings = toppings;
 };
 
 Pizza.prototype.price = function() {
+  var totalPrice = 0
       if (this.size = 'large') {
-        return 12
+       totalPrice = 12
       };
-
-};
+      return totalPrice + this.toppings
+  };
