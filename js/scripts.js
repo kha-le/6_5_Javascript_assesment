@@ -10,6 +10,10 @@ Pizza.prototype.price = function() {
     }
     else if (this.size === 'medium') {
       totalPrice = 10
+    }
+    else if (this.size === 'small') {
+      totalPrice = 8
     };
+
     return totalPrice + this.toppings
 };

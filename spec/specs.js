@@ -19,4 +19,10 @@ describe('Pizza', function() {
     expect(newPizza.price()).to.equal(13);
   })
 
+  it("returns the price of 1 small cheese pizza", function() {
+    var newPizza = new Pizza('small', 0);
+    expect(newPizza.price()).to.equal(8);
+
+  })
+
 })
