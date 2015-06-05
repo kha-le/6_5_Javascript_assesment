@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <script src="js/jquery-1.11.3.js"></script>
+  <script src="js/scripts.js"></script>
+  <title>Order Form</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Order Pizza Form</h1>
+
+    <div class="row">
+      <div class="form-group">
+      <form id="new-ticket">
+      <div class="ticket-type">
+        <select id="size" name="size">
+          <option value="large">Large</option>
+          <option value="medium">Medium</option>
+          <option value="small">Small</option>
+        </select>
+      </div>
+      <br>
+      <div class="form-group">
+        <label for="toppings" id="toppings">Toppings:</label>
+        <br>
+        <input type="checkbox" name="toppings" value=1 >Peperoni</input>
+        <input type="checkbox" name="toppings" value=1 >Ham</input>
+        <input type="checkbox" name="toppings" value=1 >Bacon</input>
+        <input type="checkbox" name="toppings" value=1 >Xtra Cheese</input>
+        <br>
+        <input type="checkbox" name="toppings" value=1 >Green Peppers</input>
+        <input type="checkbox" name="toppings" value=1 >Pinapple</input>
+        <input type="checkbox" name="toppings" value=1 >Garlic</input>
+        <input type="checkbox" name="toppings" value=1 >Chicken</input>
+      </div>
+
+      <div class="form-group">
+        <label for="qty" id="qty">Qty:</label>
+        <input type="number" name="qty" min="1" max="100">
+      </div>
+
+      <br>
+
+      <button type="submit"class="btn btn-primary">Order</button>
+    </form>
+
+    <h2>Total:</h2>
+    <ul id="totalPrice">
+    </ul>
+  </div>
+  </div>
+</div>
+</body>
+</html>

@@ -14,7 +14,21 @@ Pizza.prototype.price = function() {
     }
     else if (this.size === 'small') {
       totalPrice = 8
-    };
+    }
 
-    return (totalPrice + this.toppings) * this.qty
+    return totalPrice = (totalPrice + this.toppings) * this.qty
 };
+
+$(document).ready(function(){
+  $("form#new-ticket").submit(function(event) {
+    event.preventDefault();
+
+
+    $("ul#tickets").append("<li><span class='ticket'>" + "$" + newTicket.basePrice + ".00" + ", " + newTicket.movie)
+
+    $("ul#tickets").append("<li><span class='ticket'>" + "$" + newTicket.basePrice + ".00" + ", " + newTicket.movie)
+
+    $("input#ticket-type").val("");
+    $("input#movie").val("");
+  });
+});
