@@ -34,10 +34,10 @@ $(document).ready(function(){
       });
     var toppings = values.length
     var qty = $("#number").val();
-    var newPizza = new Pizza(size,toppings,qty).price();
+    var finalPrice = new Pizza(size,toppings,qty).price();
 
 
-    $("ul#totalPrice").append("<li><span class='totalPrice'>" + "$" + newPizza)
+    $("ul#totalPrice").append("<li><span class='totalPrice'>"+ qty + " " + size + " " + values + " " + "Total =" + " " + "$" + finalPrice)
 
 
   });
