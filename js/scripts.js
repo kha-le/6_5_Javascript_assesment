@@ -5,8 +5,11 @@ function Pizza(size,toppings) {
 
 Pizza.prototype.price = function() {
   var totalPrice = 0
-      if (this.size = 'large') {
-       totalPrice = 12
-      };
-      return totalPrice + this.toppings
-  };
+    if (this.size === 'large') {
+      totalPrice = 12
+    }
+    else if (this.size === 'medium') {
+      totalPrice = 10
+    };
+    return totalPrice + this.toppings
+};
