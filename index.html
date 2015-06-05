@@ -10,47 +10,42 @@
 <body>
   <div class="container">
     <h1>Order Pizza Form</h1>
-
     <div class="row">
       <div class="form-group">
-      <form id="new-ticket">
-      <div class="ticket-type">
-        <select id="size" name="size">
-          <option value="large">Large</option>
-          <option value="medium">Medium</option>
-          <option value="small">Small</option>
-        </select>
+        <form id="order">
+          <div class="pizza-size">
+            <select id="size" name="size">
+              <option value="large">Large</option>
+              <option value="medium">Medium</option>
+              <option value="small">Small</option>
+            </select>
+          </div>
+          <br>
+          <div class="form-group">
+            <label for="x">Toppings:</label>
+            <br>
+            <input class="toppings" type="checkbox" name="toppings" value=peperoni >Peperoni</input>
+            <input class="toppings" type="checkbox" name="toppings" value=ham >Ham</input>
+            <input class="toppings" type="checkbox" name="toppings" value=bacon >Bacon</input>
+            <input class="toppings" type="checkbox" name="toppings" value=xtra_cheese >Xtra Cheese</input>
+            <br>
+            <input class="toppings" type="checkbox" name="toppings" value=green_peppers >Green Peppers</input>
+            <input class="toppings" type="checkbox" name="toppings" value=pinapple >Pinapple</input>
+            <input class="toppings" type="checkbox" name="toppings" value=garlic >Garlic</input>
+            <input class="toppings" type="checkbox" name="toppings" value=chicken >Chicken</input>
+          </div>
+          <div class="form-group">
+            <label for="number">Qty:</label>
+            <input id ="number" type="number" name="number" min="1" max="100">
+          </div>
+          <br>
+          <button type="submit"class="btn btn-primary">Order</button>
+        </form>
+        <h2>Total:</h2>
+        <ul id="totalPrice">
+        </ul>
       </div>
-      <br>
-      <div class="form-group">
-        <label for="toppings" id="toppings">Toppings:</label>
-        <br>
-        <input type="checkbox" name="toppings" value=1 >Peperoni</input>
-        <input type="checkbox" name="toppings" value=1 >Ham</input>
-        <input type="checkbox" name="toppings" value=1 >Bacon</input>
-        <input type="checkbox" name="toppings" value=1 >Xtra Cheese</input>
-        <br>
-        <input type="checkbox" name="toppings" value=1 >Green Peppers</input>
-        <input type="checkbox" name="toppings" value=1 >Pinapple</input>
-        <input type="checkbox" name="toppings" value=1 >Garlic</input>
-        <input type="checkbox" name="toppings" value=1 >Chicken</input>
-      </div>
-
-      <div class="form-group">
-        <label for="qty" id="qty">Qty:</label>
-        <input type="number" name="qty" min="1" max="100">
-      </div>
-
-      <br>
-
-      <button type="submit"class="btn btn-primary">Order</button>
-    </form>
-
-    <h2>Total:</h2>
-    <ul id="totalPrice">
-    </ul>
+    </div>
   </div>
-  </div>
-</div>
 </body>
 </html>

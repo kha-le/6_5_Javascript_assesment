@@ -20,15 +20,25 @@ Pizza.prototype.price = function() {
 };
 
 $(document).ready(function(){
-  $("form#new-ticket").submit(function(event) {
+  $("form#order").submit(function(event) {
     event.preventDefault();
 
+    var size = $("#size").val();
+    var topping = $("#toppings").val();
+    var values = [];
+      $('.toppings').each(function(){
+        var $this = $(this);
+        if ($this.is(':checked')) {
+          values.push($this.val());
+        }
+      });
+    var toppings = values.length
+    var qty = $("#number").val();
+    var newPizza = new Pizza(size,toppings,qty).price();
 
-    $("ul#tickets").append("<li><span class='ticket'>" + "$" + newTicket.basePrice + ".00" + ", " + newTicket.movie)
 
-    $("ul#tickets").append("<li><span class='ticket'>" + "$" + newTicket.basePrice + ".00" + ", " + newTicket.movie)
+    $("ul#totalPrice").append("<li><span class='totalPrice'>" + "$" + newPizza)
 
-    $("input#ticket-type").val("");
-    $("input#movie").val("");
+
   });
 });
