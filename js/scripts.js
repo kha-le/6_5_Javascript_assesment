@@ -38,7 +38,5 @@ $(document).ready(function(){
 
 
     $("ul#totalPrice").append("<li><span class='totalPrice'>"+ qty + " " + size + " " + values + " " + "Total =" + " " + "$" + finalPrice)
-
-
   });
 });
